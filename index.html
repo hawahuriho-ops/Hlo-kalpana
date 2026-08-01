@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Kalpana ❤️</title>
+
+<style>
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Noto Sans Devanagari", sans-serif;
+    background:linear-gradient(#ffe6f0,#fff);
+    overflow:auto;
+}
+
+.heart{
+    position:fixed;
+    font-size:25px;
+    animation:fall 8s infinite;
+}
+
+@keyframes fall{
+    from{transform:translateY(-100px);}
+    to{transform:translateY(100vh);}
+}
+
+.page{
+    display:none;
+    width:90%;
+    max-width:500px;
+    max-height:80vh;
+    overflow-y:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px pink;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.active{
+    display:block;
+}
+
+button{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    font-size:18px;
+}
+
+img{
+    width:80%;
+    border-radius:20px;
+}
+
+#cover{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.envelope{
+    width:220px;
+    height:140px;
+    background:#ff4d88;
+    position:relative;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.flap{
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:110px solid transparent;
+    border-right:110px solid transparent;
+    border-top:70px solid #ff99bb;
+    transition:1s;
+    transform-origin:top;
+}
+
+.letter{
+    width:180px;
+    height:110px;
+    background:white;
+    position:absolute;
+    left:20px;
+    top:15px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    transition:1s;
+}
+</styl>
+
+</head>
+
+
+<body>
+
+<div class="heart" style="left:10%; animation-delay:1s;">❤️</div>
+<div class="heart" style="left:40%; animation-delay:3s;">❤️</div>
+<div class="heart" style="left:80%; animation-delay:5s;">❤️</div>
+
+<audio id="music" loop>
+    <source src="goli_x_unb_mah_th_timrai.mp3" type="audio/mp3">
+</audio>
+
+
+<div class="page active" id="cover">
+
+<div class="envelope" onclick="openLetter()">
+
+<div class="flap"></div>
+
+<div class="letter">
+💌
+</div>
+
+</div>
+
+<h3>Tap To Open ❤️</h3>
+
+</div>
+
+
+<div class="page" id="firstPage">
+<h2>प्रिय कल्पना ❤️</h2>
+
+<p>
+सायद हजुरलाई अलि अचम्म लाग्न सक्छ या नलाग्न सक्छ।
+ किनकि धेरै समयदेखि मनमा कुरा हजुरलाई भन्न चाहन्थेँ,
+तर भन्न सकिरहेको थिइनँ तर आज साँच्चिकै भन्न चाहन्छु। 
+</p>
+
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 2 🌹</h2>
+<p>
+जेठ २१ गते बिहान १०:३० बजे तिर मेरो जीवनको एउटा यस्तो दिन बन्यो, जुन म कहिल्यै बिर्सन सक्दिनँ। त्यो दिन मेरो अफिसको पहिलो दिन थियो, र त्यही दिन हजुरसँग पहिलो पटक भेट भएको थियो। सायद हजुरका लागि त्यो सामान्य दिन थियो, तर मेरो लागि भने त्यो दिन धेरै important थियो र त्यो दिनदेखि धेरै कुरा परिवर्तन हुन थाल्यो।          
+       हजुरसँग कुरा गर्दै, सँगै समय बिताउँदै जाँदा, थाहा नै नपाई मेरो मन हजुर तिर तानिँदै गयो। हजुर प्रति मेरो मनमा एउटा विशेष भावना जन्मियो।          
+हजुरसँग कुरा भएको दिन मेरो दिन नै राम्रो बित्थ्यो। हजुरसँग केही बेर कुरा गर्न पाउँदा पनि मन धेरै खुसी हुन्थ्यो। हजुरसँग बिताएको प्रत्येक क्षणले मलाई खुसी बनाउँथ्यो। कहिलेकाहीँ यस्तो लाग्थ्यो समय यत्तिकै रोकियोस् र म सधैं हजुरसँग यसरी नै कुरा गरिरहुँ।  
+</p>
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 3 🌸</h2>
+<p>
+तर मनमा एउटा डर पनि थियो। त्यो डर हजुरलाई माया गरेको कारणले होइन, फेरि एकपटक कसैलाई गुमाउछु कि भन्ने डर थियो। किनकि हजुरलाई था नै छ, पहिले पनि मैले मनदेखि माया गरेको व्यक्ति गुमाएको थिएँ, र त्यो कुराले मलाई धेरै पीडा दिएको थियो। मेरो जीवन नै अन्धकार भएको जस्तो, त्यसपछि त मैले आफ्नो भाग्यमा माया भन्ने कुरा नै छैन कि जस्तो सोच्न थालेको थिएँ।  
+तर हजुरलाई भेटेपछि यस्तो लायो कि फेरि एकपटक जीवनमा उज्यालो आएको जस्तो महसुस भयो।
+</p>
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 4 🌹</h2>
+<p>
+आज यी सबै कुरा भन्नुको उद्देश्य हजुरलाई कुनै दबाब दिनु वा असहज बनाउनु होइन। म केवल आफ्नो मनको कुरा हजुरलाई  व्यक्त गर्न चाहन्छु र आफ्नो मन लाई हल्का बनाउन चाहन्छु।   
+मलाई थाहा छैन हजुरको जीवनमा पहिले नै कोही विशेष व्यक्ति हुनुहुन्छ कि हुनुहुन्न। किनकि हजुरले कोही हुनुहुन्न भन्नु भएको थियो। यदि हुनुहुन्छ भने पनि, म त्यसको पूर्ण सम्मान गर्ने छु। मेरो उद्देश्य हजुरलाई अप्ठ्यारोमा पार्नु होइन।  
+हजुरको मनमा मेरो लागि यस्तै भावना छैन भने पनि म त्यसलाई पूर्ण रूपमा सम्मान गर्नेछु। हाम्रो सम्बन्ध जस्तोसुकै रहोस्, हजुरप्रति मेरो सम्मान सधैं उस्तै रहनेछ। 
+</p>
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 5 ❤️</h2>
+<p>
+तर यदि हजुरको जीवनमा त्यस्तो कोही छैन,  
+र यदि हजुरको मनमा पनि मेरो लागि सानो भए पनि ठाउँ छ भने, म हजुरको जीवनका खुसीका पलहरूमा सँगै हाँस्न र दुःखका पलहरूमा साथ उँभिन चाहन्छु। म कुनै पूर्ण व्यक्ति होइन, म बाट पनि कहिले काँही गल्ती हुन सक्ला तर हजुर लाई ढोका दिने गल्ती मैले कहिलै गर्ने छैन। किनकि ढोका पाउनु को पीडा मलाई थाछ र हजुर कहिलै दिने छैन। हजुरलाई सधैं म प्रति गरेको विश्वास टोर्ने छैन र सधैं माया दिने छु।  
+             मेरो लागि प्रेम भनेको केवल "I love you" भन्नु मात्र होइन। प्रेम भनेको सम्मान, विश्वास, साथ र जीवनभर चाहे सुख होस् या दुःख एकअर्काको साथमा सधैं उभिनु हो।
+</p>
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 6 🫀</h2>
+<p>
+अन्त्यमा एउटा कुरा मनदेखि भन्न चाहन्छु,
+I really love you so much ❤️🫀
+<br>
+You are very special person for me 🌹
+</p>
+
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+</div>
+
+
+<div class="page">
+<h2>Page 7 🌹</h2>
+
+<p>
+तर यसको जवाफ दिन हतार नगर्नुहोस्। राम्रोसँग सोचेर, आफ्नो मनले जे सही ठान्छ त्यही निर्णय लिनुहोस्। हजुरको निर्णय जे भए पनि म त्यसलाई सम्मानपूर्वक स्वीकार गर्नेछु। र हजुर को जवाफ को प्रतीक्षा गरी रहने छु।  
+</p>
+
+<button class="nextBtn" onclick="next()">Next ❤️</button>
+
+</div>
+
+
+<div class="page lovePage">
+
+<h1>❤️ I LOVE YOU ❤️</h1>
+
+</div>
+
+<style>
+.lovePage{
+    background-image:url("dekal.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    color:#ff2d6f;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.lovePage.active{
+    display:flex;
+}
+
+#firstPage .nextBtn{
+    display:inline-block;
+
+}
+</styl>
+<script>
+
+let current = 0;
+let pages = document.querySelectorAll(".page");
+
+function openLetter(){
+
+    document.getElementById("music").play();
+
+    document.querySelector(".flap").style.transform="rotateX(180deg)";
+
+    document.querySelector(".letter").style.transform="translateY(-120px)";
+
+    setTimeout(function(){
+
+        pages[current].classList.remove("active");
+
+        current = 1;
+
+        pages[current].classList.add("active");
+
+    },1500);
+
+}
+
+
+function next(){
+
+    pages[current].classList.remove("active");
+
+    current++;
+
+    if(current < pages.length){
+
+        pages[current].classList.add("active");
+
+    }
+
+}
+
+
+
+pages.forEach(page => {
+    page.addEventListener("scroll", function(){
+
+        let btn = page.querySelector(".nextBtn");
+
+        if(btn){
+            if(page.scrollTop + page.clientHeight >= page.scrollHeight - 10){
+                btn.style.display = "inline-block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+
+    });
+});
+</script>
+
+</body>
+</html>
